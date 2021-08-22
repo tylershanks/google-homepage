@@ -8,25 +8,27 @@
     </head>
 
     <body>
-        <div class="bigContainer">
-            <div class="container">
-                <div>
+        
+        <div class="container">
+            <div>
+                <!-- Empty div for the gap in the grid above the Google logo -->
+            </div>
+            <div id="logo">
+                <image src="Images/Google_Logo.png">
+            </div>
+                
+            <div class="search">
+                <!--<img class="search-icon" src="Images/magnifying_glass.png">-->
+                <input :hover type="text" placeholder="Search">
+                <!--<img class="clear-icon" src="Images/small_x.png"-->
+            </div>
 
-                </div>
-                <div id="logo">
-                    <image src="Images/Google_Logo.png">
-                </div>
-                    
-                <div id="search">
-                    <input type="text" placeholder="just a test">
-                </div>
-
-                <div>
-                    <button type="button">Google Search</button>
-                    <button type="button">I'm Feeling Lucky</button>
-                </div>
+            <div>
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
             </div>
         </div>
+        
 
 
 
