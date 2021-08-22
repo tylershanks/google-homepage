@@ -1,0 +1,52 @@
+
+
+html {
+    background-color: rgb(32, 33, 36);
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1920px;
+    grid-template-rows: 1080px;
+    justify-items: center;
+}
+/*.bigContainer {
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 1920px;
+    grid-template-rows: 1080px;
+    justify-items: center;
+}*/
+
+.container {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-rows: 170px 140px 50px 124px;
+    /*grid-gap: 10000px 10000px;*/
+    justify-items: center;
+}
+
+text {
+    color: blueviolet;
+}
+
+
+button {
+
+    padding: 10px;
+    background-color: rgb(48, 49, 52);
+    color: white;
+    font: sans-serif;
+}
+
+
+
+
+#logo {
+    /*background-color: beige;*/
+}
+
+#search {
+    /*background-color: blueviolet;*/
+}
