@@ -5,13 +5,12 @@ html {
 }
 
 body{
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: stretch;
-    align-items: stretch;
+
+    margin: 0;
+    padding: 0;
+
     
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
     /*height: 800px;
     width: 1900px;*/
 
@@ -27,13 +26,16 @@ body{
     align-content: stretch;
     height: 100vh;
     width: 100vw;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
     /*height: 800px;
     width: 1900px;*/
 
 
     /*grid-template-columns: 1900px;
     grid-template-rows: 170px 140px 50px 124px;*/
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 
@@ -41,14 +43,14 @@ body{
     display: flex;
     justify-content: space-between; /* Evenly spaces the items inside of listcontainer */
     width: 100vw;
-    background-color: darkgoldenrod;
+    /*background-color: darkgoldenrod;*/
 }
     .listbox-1 { /*Left side of BOX 1*/
         align-items: center; /* Centers the items along the center horizontal line */
         gap: 10px;
         flex-shrink: 0;
         /*margin: 10px 10px 10px 10px;*/
-        background-color: darkgray;
+        /*background-color: darkgray;*/
     }
 
     /*.empty-listbox {
@@ -58,14 +60,15 @@ body{
 
     .listbox-2 { /* Right side of BOX 1*/
         align-items: center; /* Centers the items along the center horizontal line */
-        background-color: darkgreen;
+        /*background-color: darkgreen;*/
         gap: 10px;
         flex-shrink: 0;
+        padding: 0px 40px 0px 0px;
     }
 
 #empty-box-1 {
     flex-grow:0.6;
-    background-color: azure;
+    /*background-color: azure;*/
     height: 10px;
     width: 100%;
 }
@@ -73,29 +76,29 @@ body{
 #box-2 { /* Google Logo in BOX 2 */
     align-items: center;
 
-    /*padding: 70px 0px 10px 0px*/;
-    background-color: violet;
+    padding: 0px 0px 10px 0px;
+    /*background-color: violet;*/
 }
 
 
 #box-3 {
     align-items: center;
 
-    /*padding: 20px 20px 20px 20px;*/
-    background-color: teal;
+    padding: 20px 20px 20px 20px;
+    /*background-color: teal;*/
 }
 
 
 #box-4 {
     align-items: center;
 
-    /*padding: 0px 0px 412px 0px;*/
-    background-color: yellow;
+    padding: 0px 0px 0px 0px;
+    /*background-color: yellow;*/
 }
 
 #empty-box-2 {
     flex-grow: 1.4;
-    background-color: azure;
+    /*background-color: azure;*/
     height: 10px;
     width: 100%;
 }
@@ -111,7 +114,7 @@ body{
 }
     #listbox-3 {
         align-items: center;
-        background-color: darkgray;
+        /*background-color: darkgray;*/
         gap: 30px;
         flex-shrink: 0;
     }
@@ -119,50 +122,12 @@ body{
     #listbox-4 {
         align-items: center;
         /*margin: 0px 0px 0px 1320px;*/
-        background-color: darkgreen;
+        /*background-color: darkgreen;*/
         gap: 30px;
         flex-shrink: 0;
+        padding: 0px 40px 0px 0px;
     }
 
-
-/*
-ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 8px 30px 0px 0px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 12px;
-    background-color: blue;
-    align-items: center;
-}
-
-li {
-    display: inline;
-    padding: 0px 7px 0px 7px;
-    margin: 00px 0px 20px 0px;
-    background-color: crimson;
-    align-items: center;
-    
-}
-
-.fl {
-    
-    margin-right: 1500px;
-    
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: blueviolet;
-    text-decoration: underline;
-}
-*/
 
 ul {
     display: flex;
@@ -235,7 +200,10 @@ button:hover {
     
 }
 
-/*
+input[type="text"] {
+    padding-left: 36px;
+}
+
 .search {
     position: relative;
     display: flex;
@@ -246,20 +214,27 @@ button:hover {
 
 .search-icon {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 20px;
+    left: 22px;
     width: 35px;
     cursor: pointer;
 }
 
 .clear-icon {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 20px;
+    top: 29px;
+    left: 510px;
+    width: 17px;
     cursor: pointer;
 }
-*/
+
+.voice-icon {
+    position: absolute;
+    top: 27px;
+    left: 541px;
+    width: 14px;
+    cursor: pointer;
+}
 
 
 
