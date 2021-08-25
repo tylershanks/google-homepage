@@ -80,6 +80,11 @@ body{
     /*background-color: violet;*/
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 #box-3 {
     align-items: center;
@@ -93,6 +98,8 @@ body{
     align-items: center;
 
     padding: 0px 0px 0px 0px;
+    max-width: 100%;
+    height: auto;
     /*background-color: yellow;*/
 }
 
@@ -213,7 +220,7 @@ input[type="text"] {
 }
 
 .search-icon {
-    position: absolute;
+    position: relative;
     top: 20px;
     left: 22px;
     width: 35px;
