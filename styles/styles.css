@@ -5,10 +5,15 @@ html {
 }
 
 body{
+    height: 100%;
     display: flex;
-    /*background-color: darkcyan;*/
-    height: 800px;
-    width: 1900px;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    
+    background-color: darkcyan;
+    /*height: 800px;
+    width: 1900px;*/
 
     /*grid-template-columns: 1920px;
     grid-template-rows: 50px; */
@@ -17,78 +22,107 @@ body{
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 800px;
-    width: 1900px;
+    flex-direction: column; /*makes the main axis of the flex box vertical */
+    align-items: center;    /*aligns the items to the center of the flex box */
+    align-content: stretch;
+    height: 100vh;
+    width: 100vw;
+    /*height: 800px;
+    width: 1900px;*/
 
 
     /*grid-template-columns: 1900px;
     grid-template-rows: 170px 140px 50px 124px;*/
-    /*background-color: aqua;*/
+    background-color: blue;
 }
 
-#listcontainer {
+
+.listcontainer { /* BOX 1 */
     display: flex;
-    gap: 1500px;
-    width: 1900px;
-    /*background-color: darkgoldenrod;*/
+    justify-content: space-between; /* Evenly spaces the items inside of listcontainer */
+    width: 100vw;
+    background-color: darkgoldenrod;
 }
-#listbox-1 {
-    align-items: center;
-    margin: 10px 10px 10px 10px;
-    /*background-color: darkgray;*/
-    gap: 10px;
+    .listbox-1 { /*Left side of BOX 1*/
+        align-items: center; /* Centers the items along the center horizontal line */
+        gap: 10px;
+        flex-shrink: 0;
+        /*margin: 10px 10px 10px 10px;*/
+        background-color: darkgray;
+    }
+
+    /*.empty-listbox {
+        background-color: red;
+        width: 10px
+    }*/
+
+    .listbox-2 { /* Right side of BOX 1*/
+        align-items: center; /* Centers the items along the center horizontal line */
+        background-color: darkgreen;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+#empty-box-1 {
+    flex-grow:0.6;
+    background-color: azure;
+    height: 10px;
+    width: 100%;
 }
 
-#listbox-2 {
+#box-2 { /* Google Logo in BOX 2 */
     align-items: center;
-    /*background-color: darkgreen;*/
-    gap: 10px;
-}
 
-
-#box-2 {
-    align-items: center;
-    padding: 70px 0px 10px 0px;
-    
-    /*background-color: violet;*/
+    /*padding: 70px 0px 10px 0px*/;
+    background-color: violet;
 }
 
 
 #box-3 {
     align-items: center;
-    padding: 20px 20px 20px 20px;
 
-    /*background-color: teal;*/
+    /*padding: 20px 20px 20px 20px;*/
+    background-color: teal;
 }
 
 
 #box-4 {
     align-items: center;
-    padding: 0px 0px 412px 0px;
 
-    /*background-color: yellow;*/
+    /*padding: 0px 0px 412px 0px;*/
+    background-color: yellow;
 }
 
+#empty-box-2 {
+    flex-grow: 1.4;
+    background-color: azure;
+    height: 10px;
+    width: 100%;
+}
 
 #listcontainer-2 {
     display: flex;
-    width: 1901px;
+    flex-wrap: wrap; /* Makes the left and right elements go on top of each other when the browser window is really small */
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    /*width: 1901px;*/
     background-color: rgb(23, 23, 23);
 }
-#listbox-3 {
-    align-items: center;
-    /*background-color: darkgray;*/
-    gap: 30px;
-}
+    #listbox-3 {
+        align-items: center;
+        background-color: darkgray;
+        gap: 30px;
+        flex-shrink: 0;
+    }
 
-#listbox-4 {
-    align-items: center;
-    margin: 0px 0px 0px 1320px;
-    /*background-color: darkgreen;*/
-    gap: 30px;
-}
+    #listbox-4 {
+        align-items: center;
+        /*margin: 0px 0px 0px 1320px;*/
+        background-color: darkgreen;
+        gap: 30px;
+        flex-shrink: 0;
+    }
 
 
 /*
