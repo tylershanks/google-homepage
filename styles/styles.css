@@ -89,7 +89,7 @@ img {
 #box-3 {
     align-items: center;
 
-    padding: 20px 20px 20px 20px;
+    padding: 20px 60px 20px 20px;
     /*background-color: teal;*/
 }
 
@@ -221,8 +221,8 @@ input[type="text"] {
 
 .search-icon {
     position: relative;
-    top: 20px;
-    left: 22px;
+    top: 0px;
+    left: 36px;
     width: 35px;
     cursor: pointer;
 }
@@ -230,7 +230,7 @@ input[type="text"] {
 .clear-icon {
     position: absolute;
     top: 29px;
-    left: 510px;
+    left: 550px;
     width: 17px;
     cursor: pointer;
 }
@@ -238,7 +238,7 @@ input[type="text"] {
 .voice-icon {
     position: absolute;
     top: 27px;
-    left: 541px;
+    left: 577px;
     width: 14px;
     cursor: pointer;
 }
