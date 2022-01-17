@@ -4,13 +4,3 @@ This is a project to recreate the Google home page. This project was done so I c
 The biggest challenge for me on this project was getting the page to properly resize based on the browser window size. The Flexible Box (Flexbox) layout made this incredibly simple and really helped me get this page up and running properly.
 
 Github Pages: https://tylershanks.github.io/google-homepage/
-
-
-=====
-
-Started 8/22/2021
-
-Finished 8/25/2021
-
-=====
-
